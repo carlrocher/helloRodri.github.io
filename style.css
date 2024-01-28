@@ -12,6 +12,12 @@ body{
 	align-items: center;
 	justify-content: center;
 	background-color: #000;
+	flex-direction: column;
+}
+
+h1{
+	color: #fff;
+	font-size: 3em;
 }
 
 .container .text{
@@ -56,6 +62,7 @@ body{
 label{
 	color: #fff;
 	text-align: center;
+	font-size: 18px;
 }
 
 form{
@@ -80,12 +87,34 @@ textarea{
 	display: flex;
 }
 
+button{
+	text-transform: uppercase;
+	width: 60px;
+	height: 40px;
+	margin-bottom: 10px;
+	font-size: 1em;
+	font-weight: 500;
+	cursor: pointer;
+}
+
 @media (max-width : 768px){
-		body{
-			flex-direction: column;
-		}
 
 		form{
 			margin-top: 50px;
+		}
+		form button{
+			width: 100px;
+			height: 40px;
+			font-size: 1.3em;
+			font-weight: 500;
+		}
+		.container{
+			width: 250px;
+		}
+		h1{
+			font-size: 2em;
+		}
+		.container .text{
+		    font-size: 2.5em;
 		}
 	}
